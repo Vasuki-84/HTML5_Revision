@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopify</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      .banner {
+        background-image: url("https://i.pinimg.com/736x/19/93/77/1993772f7b7e4d4cbf04cbdf95d1af0e.jpg");
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        padding: 80px;
+        background-repeat: no-repeat;
+      }
+      div p,
+      div h2 {
+        text-align: center;
+        color: white;
+        font-size: larger;
+        font-family: "Times New Roman", Times, serif;
+      }
+      nav {
+        background-color: gray;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav a {
+        text-decoration: none;
+        margin: auto;
+        color: white;
+        cursor: pointer;
+      }
+      nav a:hover {
+        background-color: cornsilk;
+        padding: 2px;
+        color: black;
+        border-radius: 6px;
+      }
+      /* .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 2px;
+          } */
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 10px;
+      }
+      article img {
+        width: 200px;
+        height: 250px;
+      }
+      .products article {
+        border: 2px black solid;
+        border-radius: 4px;
+        margin: 15px;
+        padding: 10px;
+      }
+      article h1,
+      article h6 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+      }
+      .btn {
+        border: none;
+        cursor: pointer;
+      }
+      .cart {
+        background-color: rgb(54, 255, 47);
+      }
+      .buy {
+        background-color: rgb(255, 174, 0);
+      }
+      aside {
+        background-color: rgb(93, 243, 243);
+        color: black;
+        padding: 5px;
+      }
+      aside p,
+      aside h3 {
+        display: flex;
+        justify-content: start;
+        padding: 5px;
+        color: black;
+      }
+      footer {
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="banner">
+        <h2>SHOPIFY</h2>
+        <p>Shop your essentials at top brands</p>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products </a>
+        <a href="#aside">Offers</a>
+        <a href="#footer">Contact</a>
+      </nav>
+
+      <main>
+        <section id="products">
+          <h4
+            style="
+              font-size: larger;
+              text-decoration: underline;
+              padding: 1px;
+              color: rgb(237, 17, 17);
+            "
+          >
+            Featured Products
+          </h4>
+          <div class="products">
+            <article>
+              <img
+                src="https://i.pinimg.com/1200x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg"
+                alt="smart watch"
+              />
+              <h1>Smart watch</h1>
+              <h6>$200</h6>
+              <button class="btn cart">Add to cart</button>
+              <button class="btn buy">Buy now</button>
+            </article>
+
+            <article>
+              <img
+                src="https://i.pinimg.com/1200x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg"
+                alt="smart watch"
+              />
+              <h1>Smart watch</h1>
+              <h6>$200</h6>
+              <button class="btn cart">Add to cart</button>
+              <button class="btn buy">Buy now</button>
+            </article>
+            <article>
+              <img
+                src="https://i.pinimg.com/1200x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg"
+                alt="smart watch"
+              />
+              <h1>Smart watch</h1>
+              <h6>$200</h6>
+              <button class="btn cart">Add to cart</button>
+              <button class="btn buy">Buy now</button>
+            </article>
+            <article>
+              <img
+                src="https://i.pinimg.com/1200x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg"
+                alt="smart watch"
+              />
+              <h1>Smart watch</h1>
+              <h6>$200</h6>
+              <button class="btn cart">Add to cart</button>
+              <button class="btn buy">Buy now</button>
+            </article>
+            <article>
+              <img
+                src="https://i.pinimg.com/1200x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg"
+                alt="smart watch"
+              />
+              <h1>Smart watch</h1>
+              <h6>$200</h6>
+              <button class="btn cart">Add to cart</button>
+              <button class="btn buy">Buy now</button>
+            </article>
+          </div>
+        </section>
+      </main>
+      <aside id="aside">
+        <h3>Special Offers</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+          expedita modi sequi, repellat officiis explicabo nobis necessitatibus
+          mollitia rem delectus.
+        </p>
+      </aside>
+
+      <footer id="footer">&copy:2025. All Rights Reserved</footer>
+    </div>
+  </body>
 </html>
